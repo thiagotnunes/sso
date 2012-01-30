@@ -1,0 +1,18 @@
+<%- if controller_name != 'sessions' %>
+  <%= link_to "Sign in", new_session_path(resource_name) %><br />
+<% end -%>
+
+<%- if devise_mapping.registerable? && controller_name != 'registrations' %>
+  <%= link_to "Sign up", new_registration_path(resource_name) %><br />
+<% end -%>
+
+<%- if devise_mapping.recoverable? && controller_name != 'passwords' %>
+  <%= link_to "Forgot your password?", new_password_path(resource_name) %><br />
+<% end -%>
+
+<p><strong> Sign in through one of these services</strong></p>
+ <%- resource_class.omniauth_providers.each do |provider| %>
+   <%= link_to image_tag("logos/#{provider.to_s}_64.png", :size => "64x64", :alt => "Google"), omniauth_authorize_path(resource_name, provider) %><br />
+  <% end -%>
+
+<div class="clear"></div>
