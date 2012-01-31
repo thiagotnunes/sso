@@ -23,6 +23,7 @@ end
 gem 'jquery-rails'
 gem 'devise'
 gem 'omniauth-google-oauth2'
+gem 'omniauth-facebook'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'
