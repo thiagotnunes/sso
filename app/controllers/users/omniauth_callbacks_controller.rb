@@ -7,6 +7,10 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
    callback_handler_for(:facebook)
  end
 
+ def github
+   callback_handler_for(:github)
+ end
+
  def callback_handler_for(provider)
   @user = User.find_for_provider(request.env["omniauth.auth"], current_user)
 

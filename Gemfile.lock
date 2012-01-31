@@ -74,6 +74,9 @@ GEM
       rack
     omniauth-facebook (1.2.0)
       omniauth-oauth2 (~> 1.0.0)
+    omniauth-github (1.0.1)
+      omniauth (~> 1.0)
+      omniauth-oauth2 (~> 1.0)
     omniauth-google-oauth2 (0.1.9)
       omniauth (~> 1.0)
       omniauth-oauth2
@@ -137,6 +140,7 @@ DEPENDENCIES
   devise
   jquery-rails
   omniauth-facebook
+  omniauth-github
   omniauth-google-oauth2
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
