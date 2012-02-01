@@ -25,6 +25,7 @@ gem 'devise'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
 gem 'omniauth-github'
+gem 'omniauth-twitter'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'

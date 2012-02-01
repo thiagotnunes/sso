@@ -11,6 +11,11 @@ class Users::OmniauthCallbacksController < Devise::OmniauthCallbacksController
    callback_handler_for(:github)
  end
 
+ def twitter 
+   render :text => request.env["omniauth.auth"].to_yaml
+   # callback_handler_for(:twitter)
+ end
+
  def callback_handler_for(provider)
   @user = User.find_for_provider(request.env["omniauth.auth"], current_user)
 

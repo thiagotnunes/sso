@@ -8,3 +8,5 @@ This is an application in order to test out different omniauth solutions with de
 * Github 
   * **website**: [create api keys](https://github.com/account/applications/new)
   * **note**: Need to specify the port of the callback host 
+* Twitter (yet to be supported)
+  * **website**: [create api keys](https://dev.twitter.com/apps)
