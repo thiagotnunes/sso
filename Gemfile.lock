@@ -85,6 +85,8 @@ GEM
       omniauth (~> 1.0)
     omniauth-twitter (0.0.7)
       omniauth-oauth (~> 1.0)
+    omniauth-yahoo (0.0.3)
+      omniauth-oauth (~> 1.0)
     polyglot (0.3.3)
     rack (1.4.1)
     rack-cache (1.1)
@@ -142,6 +144,7 @@ DEPENDENCIES
   omniauth-google-oauth2
   omniauth-linkedin
   omniauth-twitter
+  omniauth-yahoo
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
   sqlite3
