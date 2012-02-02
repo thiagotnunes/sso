@@ -75,6 +75,8 @@ GEM
     omniauth-google-oauth2 (0.1.9)
       omniauth (~> 1.0)
       omniauth-oauth2
+    omniauth-linkedin (0.0.6)
+      omniauth-oauth (~> 1.0.0)
     omniauth-oauth (1.0.0)
       oauth
       omniauth (~> 1.0)
@@ -138,6 +140,7 @@ DEPENDENCIES
   omniauth-facebook
   omniauth-github
   omniauth-google-oauth2
+  omniauth-linkedin
   omniauth-twitter
   rails (= 3.2.1)
   sass-rails (~> 3.2.3)
