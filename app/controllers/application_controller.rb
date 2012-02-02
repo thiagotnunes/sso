@@ -6,7 +6,7 @@ class ApplicationController < ActionController::Base
   protected
 
   def authenticate!
-    redirect_to sign_in_url unless session[:user_id] 
+    redirect_to sign_in_url unless current_user 
   end
 
   private
