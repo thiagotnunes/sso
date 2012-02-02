@@ -8,5 +8,10 @@ This is an application in order to test out different omniauth solutions with de
 * Github 
   * **website**: [create api keys](https://github.com/account/applications/new)
   * **note**: Need to specify the port of the callback host 
-* Twitter (yet to be supported)
+* Twitter 
   * **website**: [create api keys](https://dev.twitter.com/apps)
+* Linked in 
+  * **website**: [create api keys](https://www.linkedin.com/secure/developer)
+* Yahoo
+  * **website**: [create api keys](https://developer.apps.yahoo.com/projects)
+  * **note**: Need to use at least one API, else you will receive consumer_key rejected failure
