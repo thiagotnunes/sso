@@ -6,4 +6,7 @@ Rails.application.config.middleware.use OmniAuth::Builder do
   provider :twitter, ENV['TWITTER_KEY'], ENV['TWITTER_SECRET']
   provider :linked_in, ENV['LINKED_IN_KEY'], ENV['LINKED_IN_SECRET']
   provider :yahoo, ENV['YAHOO_KEY'], ENV['YAHOO_SECRET']
+  provider :identity, :fields => [:name, :email], :on_failed_registration => lambda { |env|
+    IdentitiesController.action(:new).call(env)
+  }
 end

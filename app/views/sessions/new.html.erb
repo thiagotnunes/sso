@@ -1,8 +1,27 @@
-<p><strong> Sign in through one of these services</strong></p>
-   <%= link_to image_tag("logos/google_oauth2_64.png", :size => "64x64", :alt => "Google"), "/auth/google_oauth2" %>
-   <%= link_to image_tag("logos/facebook_64.png", :size => "64x64", :alt => "Facebook"), "/auth/facebook" %>
-   <%= link_to image_tag("logos/github_64.png", :size => "64x64", :alt => "Github"), "/auth/github" %>
-   <%= link_to image_tag("logos/twitter_64.png", :size => "64x64", :alt => "Twitter"), "/auth/twitter" %>
-   <%= link_to image_tag("logos/linkedin_64.png", :size => "64x64", :alt => "Linked In"), "/auth/linkedin" %>
-   <%= link_to image_tag("logos/yahoo_64.png", :size => "64x64", :alt => "Yahoo"), "/auth/yahoo" %>
+<p>
+  <strong>Sign in through one of these services</strong>
+</p>
+
+<%= link_to image_tag("logos/google_oauth2_64.png", :size => "64x64", :alt => "Google"), "/auth/google_oauth2" %>
+<%= link_to image_tag("logos/facebook_64.png", :size => "64x64", :alt => "Facebook"), "/auth/facebook" %>
+<%= link_to image_tag("logos/github_64.png", :size => "64x64", :alt => "Github"), "/auth/github" %>
+<%= link_to image_tag("logos/twitter_64.png", :size => "64x64", :alt => "Twitter"), "/auth/twitter" %>
+<%= link_to image_tag("logos/linkedin_64.png", :size => "64x64", :alt => "Linked In"), "/auth/linkedin" %>
+<%= link_to image_tag("logos/yahoo_64.png", :size => "64x64", :alt => "Yahoo"), "/auth/yahoo" %>
+
+<p>
+  <strong>Don't use these services?</strong>
+  <%= link_to "Create an account", new_identity_path %> or login below.
+</p>
+<%= form_tag "/auth/identity/callback" do %>
+  <div class="field">
+    <%= label_tag :auth_key, "Email" %><br>
+    <%= text_field_tag :auth_key %>
+  </div>
+  <div class="field">
+    <%= label_tag :password %><br>
+    <%= password_field_tag :password %>
+  </div>
+  <div class="actions"><%= submit_tag "Login" %></div>
+<% end %> 
 <div class="clear"></div>

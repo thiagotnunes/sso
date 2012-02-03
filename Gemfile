@@ -20,6 +20,8 @@ group :assets do
   gem 'uglifier', '>= 1.0.3'
 end
 
+gem 'bcrypt-ruby', '~> 3.0.0'
+
 gem 'jquery-rails'
 gem 'omniauth-google-oauth2'
 gem 'omniauth-facebook'
@@ -27,6 +29,7 @@ gem 'omniauth-github'
 gem 'omniauth-twitter'
 gem 'omniauth-linkedin'
 gem 'omniauth-yahoo'
+gem 'omniauth-identity'
 
 # To use debugger
 # gem 'ruby-debug19', :require => 'ruby-debug'

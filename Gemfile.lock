@@ -30,6 +30,7 @@ GEM
       multi_json (~> 1.0)
     addressable (2.2.6)
     arel (3.0.0)
+    bcrypt-ruby (3.0.1)
     builder (3.0.0)
     coffee-rails (3.2.2)
       coffee-script (>= 2.2.0)
@@ -75,6 +76,8 @@ GEM
     omniauth-google-oauth2 (0.1.9)
       omniauth (~> 1.0)
       omniauth-oauth2
+    omniauth-identity (1.0.0)
+      omniauth (~> 1.0)
     omniauth-linkedin (0.0.6)
       omniauth-oauth (~> 1.0.0)
     omniauth-oauth (1.0.0)
@@ -137,11 +140,13 @@ PLATFORMS
   ruby
 
 DEPENDENCIES
+  bcrypt-ruby (~> 3.0.0)
   coffee-rails (~> 3.2.1)
   jquery-rails
   omniauth-facebook
   omniauth-github
   omniauth-google-oauth2
+  omniauth-identity
   omniauth-linkedin
   omniauth-twitter
   omniauth-yahoo
