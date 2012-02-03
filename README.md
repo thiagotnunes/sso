@@ -1,4 +1,11 @@
-This is an application in order to test out different omniauth solutions with devise.
+This is an application in order to test out different omniauth solutions.
+
+## How to execute
+1. Run rake db:create
+2. Run rake db:migrate
+3. Move the sso.sh.example to sso.sh script and paste the keys / secrets for each provider
+4. Execute the sso.sh script in the current server (. sso.sh)
+5. Run the server
 
 ## Currently Supported Solutions
 * Google oauth2 

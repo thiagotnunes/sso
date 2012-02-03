@@ -1,0 +1,17 @@
+export GOOGLE_KEY=''
+export GOOGLE_SECRET=''
+
+export FACEBOOK_KEY=''
+export FACEBOOK_SECRET=''
+
+export GITHUB_KEY=''
+export GITHUB_SECRET=''
+
+export TWITTER_KEY=''
+export TWITTER_SECRET=''
+
+export LINKED_IN_KEY=''
+export LINKED_IN_SECRET=''
+
+export YAHOO_KEY=''
+export YAHOO_SECRET=''
