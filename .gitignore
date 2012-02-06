@@ -10,3 +10,4 @@
 
 # Ignore environment configuration file
 sso.sh
+heroku.keys
