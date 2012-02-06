@@ -1,5 +1,7 @@
 This is an application in order to test out different omniauth solutions.
 
+View live demo at [http://sso-thiagotnunes.herokuapp.com/](http://sso-thiagotnunes.herokuapp.com/)
+
 ## How to execute
 1. Run rake db:create
 2. Run rake db:migrate
