@@ -11,3 +11,4 @@
 # Ignore environment configuration file
 sso.sh
 heroku.keys
+config/initializers/secret_token.rb
